@@ -36,8 +36,8 @@
   function makePetalGeometry() {
     const shape = new THREE.Shape();
     shape.moveTo(0, 0);
-    shape.bezierCurveTo(-0.34, -0.46, -0.34, -1.05, 0, -1.42);
-    shape.bezierCurveTo(0.34, -1.05, 0.34, -0.46, 0, 0);
+    shape.bezierCurveTo(-0.34, 0.46, -0.34, 1.05, 0, 1.42);
+    shape.bezierCurveTo(0.34, 1.05, 0.34, 0.46, 0, 0);
     const geo = new THREE.ExtrudeGeometry(shape, {
       depth: 0.045,
       bevelEnabled: true,
