@@ -100,29 +100,44 @@
       <span class="eyebrow">Explore Collections</span>
       <h2>A Gallery of Beautiful Creations</h2>
     </div>
-    <div class="coll-tiles" style="grid-template-columns:repeat(5,1fr);">
-      <div class="coll-tile reveal">
-        <div class="thumb" style="aspect-ratio:1/1;"><svg viewBox="0 0 48 48" fill="none"><path d="M24 8c-9 0-14 7-14 14 0 9 7 15 12 16l-1 6h6l-1-6c5-1 12-7 12-16 0-7-5-14-14-14z" stroke="currentColor" stroke-width="1.3" fill="none"/><path d="M22 44l4 4 4-4" stroke="currentColor" stroke-width="1.3" fill="none"/></svg></div>
+    <div class="coll-tiles">
+      <button type="button" class="coll-tile reveal gallery-trigger" data-category="balloons">
+        <div class="thumb ph-slot" style="aspect-ratio:1/1;">
+          <img src="images/gallery/balloons/cover.jpg" alt="Balloons">
+          <div class="ph-fallback"><svg viewBox="0 0 48 48" fill="none"><path d="M24 8c-9 0-14 7-14 14 0 9 7 15 12 16l-1 6h6l-1-6c5-1 12-7 12-16 0-7-5-14-14-14z" stroke="currentColor" stroke-width="1.3" fill="none"/><path d="M22 44l4 4 4-4" stroke="currentColor" stroke-width="1.3" fill="none"/></svg></div>
+        </div>
         <div class="label">Balloons</div>
-      </div>
-      <div class="coll-tile reveal">
-        <div class="thumb" style="aspect-ratio:1/1;"><svg viewBox="0 0 48 48" fill="none"><path d="M24 42V22" stroke="currentColor" stroke-width="1.2"/><ellipse cx="24" cy="14" rx="9" ry="12" stroke="currentColor" stroke-width="1.2"/><ellipse cx="12" cy="20" rx="8" ry="10" stroke="currentColor" stroke-width="1.2"/><ellipse cx="36" cy="20" rx="8" ry="10" stroke="currentColor" stroke-width="1.2"/></svg></div>
+      </button>
+      <button type="button" class="coll-tile reveal gallery-trigger" data-category="blooms">
+        <div class="thumb ph-slot" style="aspect-ratio:1/1;">
+          <img src="images/gallery/blooms/cover.jpg" alt="Blooms">
+          <div class="ph-fallback"><svg viewBox="0 0 48 48" fill="none"><path d="M24 42V22" stroke="currentColor" stroke-width="1.2"/><ellipse cx="24" cy="14" rx="9" ry="12" stroke="currentColor" stroke-width="1.2"/><ellipse cx="12" cy="20" rx="8" ry="10" stroke="currentColor" stroke-width="1.2"/><ellipse cx="36" cy="20" rx="8" ry="10" stroke="currentColor" stroke-width="1.2"/></svg></div>
+        </div>
         <div class="label">Blooms</div>
-      </div>
-      <div class="coll-tile reveal">
-        <div class="thumb" style="aspect-ratio:1/1;"><svg viewBox="0 0 48 48" fill="none"><rect x="10" y="16" width="28" height="22" rx="2" stroke="currentColor" stroke-width="1.2"/><path d="M10 24h28M18 16v22M26 16v22" stroke="currentColor" stroke-width="1"/></svg></div>
+      </button>
+      <button type="button" class="coll-tile reveal gallery-trigger" data-category="chocolate-packages">
+        <div class="thumb ph-slot" style="aspect-ratio:1/1;">
+          <img src="images/gallery/chocolate-packages/cover.jpg" alt="Chocolate Packages">
+          <div class="ph-fallback"><svg viewBox="0 0 48 48" fill="none"><rect x="10" y="16" width="28" height="22" rx="2" stroke="currentColor" stroke-width="1.2"/><path d="M10 24h28M18 16v22M26 16v22" stroke="currentColor" stroke-width="1"/></svg></div>
+        </div>
         <div class="label">Chocolate Packages</div>
-      </div>
-      <div class="coll-tile reveal">
-        <div class="thumb" style="aspect-ratio:1/1;"><svg viewBox="0 0 48 48" fill="none"><path d="M24 4l4 14 14 4-14 4-4 14-4-14-14-4 14-4z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" fill="none"/></svg></div>
+      </button>
+      <button type="button" class="coll-tile reveal gallery-trigger" data-category="misc">
+        <div class="thumb ph-slot" style="aspect-ratio:1/1;">
+          <img src="images/gallery/misc/cover.jpg" alt="Misc">
+          <div class="ph-fallback"><svg viewBox="0 0 48 48" fill="none"><path d="M24 4l4 14 14 4-14 4-4 14-4-14-14-4 14-4z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" fill="none"/></svg></div>
+        </div>
         <div class="label">Misc</div>
-      </div>
-      <div class="coll-tile reveal">
-        <div class="thumb" style="aspect-ratio:1/1;"><svg viewBox="0 0 48 48" fill="none"><rect x="8" y="18" width="32" height="22" stroke="currentColor" stroke-width="1.2"/><path d="M8 18L24 8L40 18" stroke="currentColor" stroke-width="1.2"/></svg></div>
+      </button>
+      <button type="button" class="coll-tile reveal gallery-trigger" data-category="snacks">
+        <div class="thumb ph-slot" style="aspect-ratio:1/1;">
+          <img src="images/gallery/snacks/cover.jpg" alt="Snacks">
+          <div class="ph-fallback"><svg viewBox="0 0 48 48" fill="none"><rect x="8" y="18" width="32" height="22" stroke="currentColor" stroke-width="1.2"/><path d="M8 18L24 8L40 18" stroke="currentColor" stroke-width="1.2"/></svg></div>
+        </div>
         <div class="label">Snacks</div>
-      </div>
+      </button>
     </div>
-    <p style="text-align:center;color:var(--ink-soft);font-size:13.5px;margin-top:40px;">Photos for each collection are on their way. This page is ready for them as soon as they are in.</p>
+    <p style="text-align:center;color:var(--ink-soft);font-size:13.5px;margin-top:40px;">Tap a category to see everything in it. Photos are on their way, this page is ready for them as soon as they are in.</p>
   </div>
 </section>
 
@@ -162,6 +177,107 @@
   </div>
 </footer>
 
+<div class="gallery-modal" id="modal-balloons" aria-hidden="true">
+  <div class="gallery-modal-backdrop" data-close></div>
+  <div class="gallery-modal-panel" role="dialog" aria-label="Balloons gallery">
+    <div class="gallery-modal-head">
+      <h3>Balloons</h3>
+      <button class="gallery-modal-close" data-close aria-label="Close gallery">&#10005;</button>
+    </div>
+    <div class="gallery-modal-grid">
+      <div class="gm-item ph-slot"><img src="images/gallery/balloons/1.jpg" alt="Balloons photo 1"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div></div>
+      <div class="gm-item ph-slot"><img src="images/gallery/balloons/2.jpg" alt="Balloons photo 2"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div></div>
+      <div class="gm-item ph-slot"><img src="images/gallery/balloons/3.jpg" alt="Balloons photo 3"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div></div>
+      <div class="gm-item ph-slot"><img src="images/gallery/balloons/4.jpg" alt="Balloons photo 4"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div></div>
+      <div class="gm-item ph-slot"><img src="images/gallery/balloons/5.jpg" alt="Balloons photo 5"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div></div>
+      <div class="gm-item ph-slot"><img src="images/gallery/balloons/6.jpg" alt="Balloons photo 6"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div></div>
+      <div class="gm-item ph-slot"><img src="images/gallery/balloons/7.jpg" alt="Balloons photo 7"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div></div>
+      <div class="gm-item ph-slot"><img src="images/gallery/balloons/8.jpg" alt="Balloons photo 8"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div></div>
+    </div>
+  </div>
+</div>
+
+<div class="gallery-modal" id="modal-blooms" aria-hidden="true">
+  <div class="gallery-modal-backdrop" data-close></div>
+  <div class="gallery-modal-panel" role="dialog" aria-label="Blooms gallery">
+    <div class="gallery-modal-head">
+      <h3>Blooms</h3>
+      <button class="gallery-modal-close" data-close aria-label="Close gallery">&#10005;</button>
+    </div>
+    <div class="gallery-modal-grid">
+      <div class="gm-item ph-slot"><img src="images/gallery/blooms/1.jpg" alt="Blooms photo 1"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div></div>
+      <div class="gm-item ph-slot"><img src="images/gallery/blooms/2.jpg" alt="Blooms photo 2"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div></div>
+      <div class="gm-item ph-slot"><img src="images/gallery/blooms/3.jpg" alt="Blooms photo 3"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div></div>
+      <div class="gm-item ph-slot"><img src="images/gallery/blooms/4.jpg" alt="Blooms photo 4"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div></div>
+      <div class="gm-item ph-slot"><img src="images/gallery/blooms/5.jpg" alt="Blooms photo 5"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div></div>
+      <div class="gm-item ph-slot"><img src="images/gallery/blooms/6.jpg" alt="Blooms photo 6"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div></div>
+      <div class="gm-item ph-slot"><img src="images/gallery/blooms/7.jpg" alt="Blooms photo 7"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div></div>
+      <div class="gm-item ph-slot"><img src="images/gallery/blooms/8.jpg" alt="Blooms photo 8"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div></div>
+    </div>
+  </div>
+</div>
+
+<div class="gallery-modal" id="modal-chocolate-packages" aria-hidden="true">
+  <div class="gallery-modal-backdrop" data-close></div>
+  <div class="gallery-modal-panel" role="dialog" aria-label="Chocolate Packages gallery">
+    <div class="gallery-modal-head">
+      <h3>Chocolate Packages</h3>
+      <button class="gallery-modal-close" data-close aria-label="Close gallery">&#10005;</button>
+    </div>
+    <div class="gallery-modal-grid">
+      <div class="gm-item ph-slot"><img src="images/gallery/chocolate-packages/1.jpg" alt="Chocolate Packages photo 1"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div></div>
+      <div class="gm-item ph-slot"><img src="images/gallery/chocolate-packages/2.jpg" alt="Chocolate Packages photo 2"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div></div>
+      <div class="gm-item ph-slot"><img src="images/gallery/chocolate-packages/3.jpg" alt="Chocolate Packages photo 3"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div></div>
+      <div class="gm-item ph-slot"><img src="images/gallery/chocolate-packages/4.jpg" alt="Chocolate Packages photo 4"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div></div>
+      <div class="gm-item ph-slot"><img src="images/gallery/chocolate-packages/5.jpg" alt="Chocolate Packages photo 5"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div></div>
+      <div class="gm-item ph-slot"><img src="images/gallery/chocolate-packages/6.jpg" alt="Chocolate Packages photo 6"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div></div>
+      <div class="gm-item ph-slot"><img src="images/gallery/chocolate-packages/7.jpg" alt="Chocolate Packages photo 7"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div></div>
+      <div class="gm-item ph-slot"><img src="images/gallery/chocolate-packages/8.jpg" alt="Chocolate Packages photo 8"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div></div>
+    </div>
+  </div>
+</div>
+
+<div class="gallery-modal" id="modal-misc" aria-hidden="true">
+  <div class="gallery-modal-backdrop" data-close></div>
+  <div class="gallery-modal-panel" role="dialog" aria-label="Misc gallery">
+    <div class="gallery-modal-head">
+      <h3>Misc</h3>
+      <button class="gallery-modal-close" data-close aria-label="Close gallery">&#10005;</button>
+    </div>
+    <div class="gallery-modal-grid">
+      <div class="gm-item ph-slot"><img src="images/gallery/misc/1.jpg" alt="Misc photo 1"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div></div>
+      <div class="gm-item ph-slot"><img src="images/gallery/misc/2.jpg" alt="Misc photo 2"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div></div>
+      <div class="gm-item ph-slot"><img src="images/gallery/misc/3.jpg" alt="Misc photo 3"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div></div>
+      <div class="gm-item ph-slot"><img src="images/gallery/misc/4.jpg" alt="Misc photo 4"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div></div>
+      <div class="gm-item ph-slot"><img src="images/gallery/misc/5.jpg" alt="Misc photo 5"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div></div>
+      <div class="gm-item ph-slot"><img src="images/gallery/misc/6.jpg" alt="Misc photo 6"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div></div>
+      <div class="gm-item ph-slot"><img src="images/gallery/misc/7.jpg" alt="Misc photo 7"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div></div>
+      <div class="gm-item ph-slot"><img src="images/gallery/misc/8.jpg" alt="Misc photo 8"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div></div>
+    </div>
+  </div>
+</div>
+
+<div class="gallery-modal" id="modal-snacks" aria-hidden="true">
+  <div class="gallery-modal-backdrop" data-close></div>
+  <div class="gallery-modal-panel" role="dialog" aria-label="Snacks gallery">
+    <div class="gallery-modal-head">
+      <h3>Snacks</h3>
+      <button class="gallery-modal-close" data-close aria-label="Close gallery">&#10005;</button>
+    </div>
+    <div class="gallery-modal-grid">
+      <div class="gm-item ph-slot"><img src="images/gallery/snacks/1.jpg" alt="Snacks photo 1"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div></div>
+      <div class="gm-item ph-slot"><img src="images/gallery/snacks/2.jpg" alt="Snacks photo 2"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div></div>
+      <div class="gm-item ph-slot"><img src="images/gallery/snacks/3.jpg" alt="Snacks photo 3"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div></div>
+      <div class="gm-item ph-slot"><img src="images/gallery/snacks/4.jpg" alt="Snacks photo 4"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div></div>
+      <div class="gm-item ph-slot"><img src="images/gallery/snacks/5.jpg" alt="Snacks photo 5"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div></div>
+      <div class="gm-item ph-slot"><img src="images/gallery/snacks/6.jpg" alt="Snacks photo 6"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div></div>
+      <div class="gm-item ph-slot"><img src="images/gallery/snacks/7.jpg" alt="Snacks photo 7"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div></div>
+      <div class="gm-item ph-slot"><img src="images/gallery/snacks/8.jpg" alt="Snacks photo 8"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div></div>
+    </div>
+  </div>
+</div>
+
 <script src="assets/script.js"></script>
+<script src="assets/gallery.js"></script>
 </body>
 </html>
