@@ -45,7 +45,7 @@
   /* ================= LOADER ================= */
   #loader{
     position:fixed;inset:0;z-index:999;
-    background:radial-gradient(circle at 50% 42%, #263B22 0%, #100D0B 78%);
+    background:radial-gradient(circle at 50% 42%, #241019 0%, #100D0B 78%);
     display:flex;flex-direction:column;align-items:center;justify-content:center;
     transition:opacity .8s ease, visibility .8s ease;
   }
@@ -56,8 +56,8 @@
     transform-origin:0 0;
     transform:scale(0);
     animation:loaderBloom 1.6s cubic-bezier(.34,1.56,.64,1) infinite;
-    fill:var(--green-light);
-    stroke:rgba(255,255,255,0.2);
+    fill:var(--pink);
+    stroke:rgba(255,255,255,0.25);
     stroke-width:0.6;
   }
   .loader-flower g > g:nth-child(1) .l-petal{animation-delay:0s;}
@@ -91,7 +91,7 @@
   }
 
   /* ================= TOP BAND / NAV ================= */
-  .top-band{background:var(--white);color:var(--ink);border-bottom:2px solid var(--green);}
+  .top-band{background:var(--white);color:var(--ink);border-bottom:2px solid var(--black);}
   .nav-upper{
     display:flex;align-items:center;justify-content:space-between;
     max-width:var(--maxw);margin:0 auto;padding:22px 40px 6px;
@@ -117,7 +117,7 @@
     padding-bottom:5px;border-bottom:1px solid transparent;
     transition:border-color .25s ease, opacity .25s ease;opacity:0.92;
   }
-  .nav-lower a:hover, .nav-lower a.active{border-color:var(--green);opacity:1;}
+  .nav-lower a:hover, .nav-lower a.active{border-color:var(--pink);opacity:1;}
   .announce{
     background:var(--white);color:var(--green-deep);text-align:center;padding:11px 20px;
     font-size:12px;letter-spacing:0.14em;text-transform:uppercase;font-weight:500;
@@ -152,7 +152,7 @@
     align-items:center;gap:20px;max-width:var(--maxw);margin:0 auto;padding:70px 40px;width:100%;
   }
   .hero-text{color:var(--ink);}
-  .hero-text .eyebrow{color:var(--green-deep);opacity:1;}
+  .hero-text .eyebrow{color:var(--pink-deep);opacity:1;}
   .hero-text h1{
     font-size:clamp(32px,4.4vw,50px);font-style:italic;margin:18px 0 30px;line-height:1.18;
     color:var(--ink);
@@ -378,6 +378,8 @@
     transform-origin:0 0;
     animation:bgBloom 10s ease-in-out infinite;
   }
+  .bg-bloom--pink .petal{fill:var(--pink);stroke:var(--pink-deep);}
+  .bg-bloom--pink .flower-center{fill:var(--pink-deep);opacity:0.5;}
   .bg-bloom .flower-center{fill:var(--green-deep);opacity:0.5;}
   @keyframes bgBloom{
     0%{ transform:scale(0.18) rotate(0deg); }
@@ -400,7 +402,7 @@
     overflow:hidden;text-align:center;color:var(--ink);
   }
   .page-banner-inner{position:relative;z-index:2;max-width:640px;padding:70px 24px 60px;}
-  .page-banner .eyebrow{color:var(--green-deep);opacity:1;}
+  .page-banner .eyebrow{color:var(--pink-deep);opacity:1;}
   .page-banner h1{font-size:clamp(30px,4.2vw,46px);font-style:italic;margin-top:16px;line-height:1.22;color:var(--ink);}
   .page-banner p{margin-top:16px;font-size:14.5px;color:var(--ink-soft);max-width:480px;margin-left:auto;margin-right:auto;}
 
@@ -414,14 +416,15 @@
   .cta-band h3{font-size:clamp(22px,2.8vw,28px);font-style:italic;color:var(--green-deep);margin-bottom:14px;}
   .cta-band p{color:var(--ink-soft);font-size:14.5px;margin-bottom:26px;max-width:480px;margin:0 auto 26px;}
 
-  .breadcrumb{font-size:11.5px;letter-spacing:0.12em;text-transform:uppercase;color:var(--green-deep);margin-bottom:6px;}
+  .breadcrumb{font-size:11.5px;letter-spacing:0.12em;text-transform:uppercase;color:var(--pink-deep);margin-bottom:6px;}
   .breadcrumb a{border-bottom:1px solid transparent;transition:border-color .2s;}
-  .breadcrumb a:hover{border-bottom-color:var(--green-deep);}
+  .breadcrumb a:hover{border-bottom-color:var(--pink-deep);}
 
   /* ================= MARQUEE TICKER ================= */
   .marquee-band{
     background:var(--black);color:var(--white);
     padding:16px 0;overflow:hidden;white-space:nowrap;
+    border-top:2px solid var(--pink);border-bottom:2px solid var(--pink);
   }
   .marquee-track{display:inline-flex;width:max-content;animation:scrollX 30s linear infinite;}
   .marquee-track span{
@@ -433,7 +436,7 @@
   @keyframes scrollX{ from{transform:translateX(0);} to{transform:translateX(-50%);} }
 
   /* ================= SIMPLE SITE FOOTER ================= */
-  .site-footer{background:var(--black);color:var(--white);padding:70px 0 0;}
+  .site-footer{background:var(--black);color:var(--white);padding:70px 0 0;border-top:3px solid var(--pink);}
   .footer-top{
     display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:50px;padding-bottom:46px;
   }
@@ -536,8 +539,8 @@
   #cursor-flower.active{opacity:1;}
   #cursor-flower svg{width:100%;height:100%;overflow:visible;}
   .cursor-petal{
-    fill:var(--green);
-    stroke:var(--green-deep);
+    fill:var(--pink);
+    stroke:var(--pink-deep);
     stroke-width:0.6;
     transform-origin:0 0;
     transform:scale(0.32);

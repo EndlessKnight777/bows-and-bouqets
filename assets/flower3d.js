@@ -3,7 +3,7 @@
   if (!container || typeof THREE === 'undefined') return;
 
   const PETAL_WHITE = 0xFAF6F0;
-  const PETAL_GREEN = 0xC3DCC2;
+  const PETAL_PINK = 0xE8A0C4;
   const GREEN_DEEP = 0x2A4A2E;
   const GOLD = 0xE8C48F;
   const STEM_GREEN = 0x3F6B44;
@@ -115,7 +115,7 @@
 
     const mesh = new THREE.Mesh(petalGeo, petalMat.clone());
     mesh.scale.setScalar(0.4);
-    mesh.material.color.setHex(PETAL_GREEN);
+    mesh.material.color.setHex(PETAL_PINK);
     bloomPivot.add(mesh);
     placement.add(bloomPivot);
     bloomOrigin.add(placement);
