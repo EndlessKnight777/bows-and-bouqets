@@ -2,10 +2,11 @@
   const container = document.getElementById('heroBouquet');
   if (!container || typeof THREE === 'undefined') return;
 
-  const PINK = 0xE8A0C4;
-  const PINK_DEEP = 0xD9679F;
+  const PETAL_WHITE = 0xFAF6F0;
+  const PETAL_GREEN = 0xC3DCC2;
+  const GREEN_DEEP = 0x2A4A2E;
   const GOLD = 0xE8C48F;
-  const STEM_GREEN = 0x7C9468;
+  const STEM_GREEN = 0x3F6B44;
 
   let width = container.clientWidth || 420;
   let height = container.clientHeight || 420;
@@ -25,7 +26,7 @@
   const keyLight = new THREE.DirectionalLight(0xffffff, 1.1);
   keyLight.position.set(2.5, 3, 3);
   scene.add(keyLight);
-  const fillLight = new THREE.DirectionalLight(0xffc8dd, 0.5);
+  const fillLight = new THREE.DirectionalLight(0xf3f7f0, 0.5);
   fillLight.position.set(-3, 1, -2);
   scene.add(fillLight);
   const rimLight = new THREE.PointLight(0xffffff, 0.6, 10);
@@ -52,14 +53,14 @@
 
   const petalGeo = makePetalGeometry();
   const petalMat = new THREE.MeshPhysicalMaterial({
-    color: PINK,
+    color: PETAL_WHITE,
     roughness: 0.45,
     metalness: 0,
     clearcoat: 0.25,
     clearcoatRoughness: 0.6,
     side: THREE.DoubleSide,
-    emissive: PINK_DEEP,
-    emissiveIntensity: 0.06
+    emissive: GREEN_DEEP,
+    emissiveIntensity: 0.03
   });
 
   const flowerGroup = new THREE.Group();
@@ -114,7 +115,7 @@
 
     const mesh = new THREE.Mesh(petalGeo, petalMat.clone());
     mesh.scale.setScalar(0.4);
-    mesh.material.color.setHex(0xF3C6DC);
+    mesh.material.color.setHex(PETAL_GREEN);
     bloomPivot.add(mesh);
     placement.add(bloomPivot);
     bloomOrigin.add(placement);
